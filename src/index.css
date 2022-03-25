@@ -1,0 +1,167 @@
+/* GLOBAL STYLES */
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style:  normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Quicksand-Regular.otf") format("opentype");
+
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style:  normal;
+  font-weight: bold;
+  src: url("./assets/fonts/Quicksand-Bold.otf") format("opentype");
+
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #eff2f5f3;
+  /* background-color: #e7eaf1; */
+  background-image: url("assets/img/bergwald-trans2.jpg"); 
+  background-repeat: no-repeat;
+  background-size: 240vh 100vh;
+ 
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.burger-line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  
+}
+
+/* The Modal (background) */
+.modal-container {
+  display: block; 
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close-button {
+  font-size: 28px;
+  margin-right: 0.4em;
+}
+
+.heading {
+  text-align: center;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+a {
+  display: block;
+  margin: 1em 1em;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.text-content {
+  color: black;
+
+}
+
+
+/* ONLY DESKTOP */
+@media only screen and (min-width: 953px) {
+  .text-content {
+    width: 650px;
+    margin: 0 auto;
+  }
+
+  .header {
+    margin: 1em 1em;
+    margin-bottom: 3em;
+  }
+
+  .company-name {
+    font-size: 28px;
+
+  }
+}
+
+/* ONLY TABLET */
+@media only screen and (max-width: 952px) {
+  .text-content {
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  .header {
+    margin: 1em 1em;
+    margin-bottom: 2em;
+  }
+
+  .company-name {
+    font-size: 24px;
+  }
+
+  body {
+    /* Bei längerem Text: zweite Größenangabe verändern */
+    background-size: 240vh 120vh;
+  }
+}
+
+/* ONLY MOBILE */
+@media only screen and (max-width: 470px) {
+
+  body {
+    /* Bei längerem Text: zweite Größenangabe verändern */
+    background-size: 240vh 160vh;
+  }
+
+  .text-content {
+    width: auto;
+    margin: 0 1em;
+    padding: 0 0;
+  }
+
+  .header {
+    margin: 1em 1em;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid black;
+  }
+
+  .company-name {
+    font-size: 22px;
+
+  }
+}
